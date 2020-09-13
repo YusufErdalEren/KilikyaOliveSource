@@ -1,0 +1,15 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "Swiper@5.4.5",
+      "destination": "wwwroot/Swiper/",
+      "files": [
+        "js/swiper.min.js",
+        "css/swiper.min.css",
+        "js/swiper.min.js.map"
+      ]
+    }
+  ]
+}

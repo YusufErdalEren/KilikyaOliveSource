@@ -2,15 +2,219 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="row" style="height:500px; margin-top:50px;">
-    <div class="col-md-6">
-        <div>
-            <img src="images/OliveOil.jpg" />
+<link href="Swiper/css/swiper.min.css" rel="stylesheet" />
+<style>
+
+    html,
+    body {
+        position: relative;
+        height: 100%;
+    }
+
+    body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+    }
+
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-container2 {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    .swiper-slide2 {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+</style>
+
+<div class="row">
+    <div class="col-md-7" style="margin-right:10px;">
+        <div class="swiper-container slider1" style="margin-top:50px;">
+            <label style="text-align:center; display:block; font-size:x-large;">Zeytin Yağı</label>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/OliveOil_1.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/OliveOil_2.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/OliveOil_1.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/OliveOil_2.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/OliveOil_1.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/OliveOil_2.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/OliveOil_1.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/OliveOil_2.jpg" />
+                </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+            <div class="swiper-scrollbar"></div>
         </div>
     </div>
-    <div class="col-md-6">
-        <div>
-            <img src="images/OliveOil2.jpg" />
+    <div class="col-md-4">
+        <div class="swiper-container slider2" style="margin-top:50px;">
+            <label style="text-align:center; display:block; font-size:x-large;">Zeytin</label>
+            <div class="swiper-wrapper" style="background-color:aqua;">
+                <div class="swiper-slide">
+                    <img src="images/greenOlive.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/greenOlive2.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/greenOlive3.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/greenOlive.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/greenOlive2.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/greenOlive3.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/greenOlive.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/greenOlive2.jpg" />
+                </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+            <div class="swiper-scrollbar"></div>
         </div>
     </div>
 </div>
+
+<!-- ABOUT WINE COMPANY -->
+<section id="section-about" class="background-colored text-dark" style="background-image:url(images/pattern/pattern28.jpg); margin-top:50px;">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-4">
+                <h2 class="text-medium">Welcome to Kilikya Olive</h2>
+                <p>
+                    The heart of Lorem Ipsum
+                    <br />wine country
+                </p>
+            </div>
+            <div class="col-lg-8">
+                <p class="lead">
+                    The history of grape growing in the Marlborough region dates back to the late 1800s. And today we are proud to offer some of New Zealand’s best wines.
+                </p>
+                <p>The most happiest time of the day!. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius consequat magna, id molestie ipsum volutpat quis.</p>
+
+                <p>The most happiest time of the day!. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius consequat magna, id molestie ipsum volutpat quis.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- end: ABOUT WINE COMPANY -->
+
+<script src="Swiper/js/swiper.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper('.slider1', {
+        loop: true,
+        autoHeight: true,
+        autoplay: {
+            delay: 1000,
+            disableOnInteraction: false,
+        },
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        }
+    });
+
+    var swiper = new Swiper('.slider2', {
+        loop: true,
+        autoHeight: true,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        // If we need pagination
+
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        }
+    });
+</script>
+
