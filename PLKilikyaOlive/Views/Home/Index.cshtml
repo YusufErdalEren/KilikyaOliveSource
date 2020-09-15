@@ -25,11 +25,6 @@
         height: 100%;
     }
 
-    .swiper-container2 {
-        width: 100%;
-        height: 100%;
-    }
-
     .swiper-slide {
         text-align: center;
         font-size: 18px;
@@ -49,55 +44,77 @@
         align-items: center;
     }
 
-    .swiper-slide2 {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
+    .swiper-slide {
+        display: block;
+        width: 100%;
+        /*            height: auto;
+            -ms-transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            position: absolute;
+            left: 50%;
+            top: 50%;*/
+    }
+
+    .image-slider {
+        height: 430px;
+        width: 100%;
     }
 </style>
-
 <div class="row">
-    <div class="col-md-7" style="margin-right:10px;">
+    <div class="col-md-8">
         <div class="swiper-container slider1" style="margin-top:50px;">
-            <label style="text-align:center; display:block; font-size:x-large;">Zeytin Yağı</label>
+            @*<label style="text-align:center; display:block; font-size:x-large;">Zeytin Yağı</label>*@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="images/OliveOil_1.jpg" />
+                    <div style="background-image: url('/images/OliveOil_1.jpg')">
+                        deneme
+                    </div>
                 </div>
                 <div class="swiper-slide">
-                    <img src="images/OliveOil_2.jpg" />
+                    <a href="#">
+                        <div style="background-image: url('/images/OliveOil_2.jpg')">
+                        </div>
+                    </a>
                 </div>
-                <div class="swiper-slide">
-                    <img src="images/OliveOil_1.jpg" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="images/OliveOil_2.jpg" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="images/OliveOil_1.jpg" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="images/OliveOil_2.jpg" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="images/OliveOil_1.jpg" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="images/OliveOil_2.jpg" />
-                </div>
+                @*<a>
+                        <div class="image-slider" style="background-image: url(../images/OliveOil_2.jpg)">
+                        </div>
+                    </a>
+                    <a>
+                        <div class="image-slider" style="background-image: url(../images/OliveOil_1.jpg)">
+                        </div>
+                    </a>
+                    <a>
+                        <div class="image-slider" style="background-image: url(../images/OliveOil_2.jpg)">
+                        </div>
+                    </a>
+                    <a>
+                        <div class="image-slider" style="background-image: url(../images/OliveOil_1.jpg)">
+                        </div>
+                    </a>*@
+                @*<div class="swiper-slide">
+                        <img src="images/OliveOil_2.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/OliveOil_1.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/OliveOil_2.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/OliveOil_1.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/OliveOil_2.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/OliveOil_1.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/OliveOil_2.jpg" />
+                    </div>*@
             </div>
 
             <div class="swiper-pagination"></div>
@@ -111,7 +128,7 @@
     </div>
     <div class="col-md-4">
         <div class="swiper-container slider2" style="margin-top:50px;">
-            <label style="text-align:center; display:block; font-size:x-large;">Zeytin</label>
+            @*<label style="text-align:center; display:block; font-size:x-large;">Zeytin</label>*@
             <div class="swiper-wrapper" style="background-color:aqua;">
                 <div class="swiper-slide">
                     <img src="images/greenOlive.jpg" />
@@ -139,36 +156,140 @@
                 </div>
             </div>
 
-            <div class="swiper-pagination"></div>
-
             <!-- Add Arrows -->
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
 
-            <div class="swiper-scrollbar"></div>
         </div>
     </div>
 </div>
 
+<!-- Shop products -->
+<section>
+    <div class="container">
+
+        <div class="heading m-b-40">
+            <h4>Ürünlerimiz</h4>
+        </div>
+
+        <!--Product list-->
+        <div class="shop">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="product">
+                        <div class="product-image" style="height:250px;">
+                            <a href="#">
+                                <img alt="Shop product image!" src="images/greenOlive.jpg">
+                            </a>
+                            <div class="product-overlay">
+                                <a href="shop-product-ajax-page.html" data-lightbox="ajax">İncele</a>
+                            </div>
+                        </div>
+
+                        <div class="product-description">
+                            <div class="product-title">
+                                <h3><a href="#">Yeşil Zeytin</a></h3>
+                            </div>
+                            <div class="product-price">
+                                <ins>40.00₺</ins>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="product">
+                        <div class="product-image" style="height:250px;">
+                            <a href="#">
+                                <img alt="Shop product image!" src="images/greenOlive2.jpg">
+                            </a>
+                            <div class="product-overlay">
+                                <a href="shop-product-ajax-page.html" data-lightbox="ajax">İncele</a>
+                            </div>
+                        </div>
+
+                        <div class="product-description">
+                            <div class="product-title">
+                                <h3><a href="#">Siyah Zeytin</a></h3>
+                            </div>
+                            <div class="product-price">
+                                <ins>30.00₺</ins>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="product">
+                        <div class="product-image" style="height:250px;">
+                            <a href="#">
+                                <img alt="Shop product image!" src="images/greenOlive3.jpg">
+                            </a>
+                            <div class="product-overlay">
+                                <a href="shop-product-ajax-page.html" data-lightbox="ajax">İncele</a>
+                            </div>
+                        </div>
+
+                        <div class="product-description">
+                            <div class="product-title">
+                                <h3><a href="#">İri Taaneli Zeytin</a></h3>
+                            </div>
+                            <div class="product-price">
+                                <ins>70.00₺</ins>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="product">
+                        <div class="product-image" style="height:250px;">
+                            <a href="#">
+                                <img alt="Shop product image!" src="images/greenOlive.jpg">
+                            </a>
+                            <div class="product-overlay">
+                                <a href="shop-product-ajax-page.html" data-lightbox="ajax">İncele</a>
+                            </div>
+                        </div>
+
+                        <div class="product-description">
+                            <div class="product-title">
+                                <h3><a href="#">Yeşil Zeytin</a></h3>
+                            </div>
+                            <div class="product-price">
+                                <ins>40.00₺</ins>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end: Shop products -->
 <!-- ABOUT WINE COMPANY -->
-<section id="section-about" class="background-colored text-dark" style="background-image:url(images/pattern/pattern28.jpg); margin-top:50px;">
+<section id="section-about" class="background-colored text-dark" style="background-image:url(images/pattern/pattern28.jpg);">
     <div class="container">
 
         <div class="row">
-            <div class="col-lg-4">
-                <h2 class="text-medium">Welcome to Kilikya Olive</h2>
+            <div class="col-lg-5">
+                <h2 class="text-medium">Zeytinyağı Medeniyetine Hoşgeldiniz.</h2>
                 <p>
-                    The heart of Lorem Ipsum
-                    <br />wine country
+                    Doğal zeytin ve zeytinyağı ürünlerimiz sizleri bekliyor.
                 </p>
             </div>
-            <div class="col-lg-8">
+            <div class="col-lg-7">
                 <p class="lead">
-                    The history of grape growing in the Marlborough region dates back to the late 1800s. And today we are proud to offer some of New Zealand’s best wines.
+                    M.Ö 8.000'li yıllarda Doğu Akdeniz havzasında başlayan tarihsel yolculuğunda zeytin ve zeytinyağının insanoğlu için faydaları saymakla bitmez. Eski medeniyetlerin Tanrılarına zeytin dalı sunacak kadar kutsal gördüğü doğa ananın bu mucizesi hala sofralarımızı renklendirmeye devam etmektedir. Şifa kaynağı bu meyve ve meyve suyunun en doğal ve lezzetli hâline ulaşmak için bizi takip edin.
                 </p>
-                <p>The most happiest time of the day!. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius consequat magna, id molestie ipsum volutpat quis.</p>
+                <p>1lt natürel sızma zeytinyağı elde etmek için zeytinin türüne ve yetiştiği bölgeye bağlı olarak ortalama 5-6 kg zeytin kullanılır. Soğuk sıkım olması durumunda bu rakam 7-9 kg'ye kadar çıkmaktadır. Zeytin yeşil, pembe ve siyah olmak üzere 3 evreden oluşmaktadır. En değerlisi olan yeşil dönemde (erken hasat) toplanan zeytinlerden el edilen, bulunduğu bahçenin bütün aromalarını bünyesinde barındıran yeşil renkli yağdır. En değerli olan bu dönemde zeytinin yağ kapasitesi düşük olduğundan 10-12 kg yağdan 1 lt yağ elde edilmektedir.</p>
 
-                <p>The most happiest time of the day!. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius consequat magna, id molestie ipsum volutpat quis.</p>
+                <p>
+                    Ne yediğimizi bilmek gerçekten önemli. Şimdi marketlerde sıklıkla karşılaştığınız zeytinyağlarının ne anlama geldiğine bakalım;
+                    1- Natürel sızma zeytinyağı: Doğrudan tüketime uygun, serbest yağ asitliği oleik asit cinsinden her 100 gramda 0,8 gramdan fazla olmayan yağlar,
+                    2) Natürel birinci zeytinyağı: Doğrudan tüketime uygun, serbest yağ asitliği oleik asit cinsinden her 100 gramda 2,0 gramdan fazla olmayan yağlar,
+                    3) Rafine zeytinyağı: Ham zeytinyağının doğal trigliserid yapısında değişikliğe yol açmayan metotlarla rafine edilmeleri sonucu elde edilen ve serbest yağ asitliği oleik asit cinsinden her 100 gramda 0,3 gramdan fazla olmayan yağdır.
+                    4) Riviera zeytinyağı: Rafine zeytinyağı ile doğrudan tüketime uygun natürel zeytinyağları karışımından oluşan ve serbest yağ asitliği oleik asit cinsinden her 100 gramda 1,0 gramdan fazla olmayan yağdır.
+
+                    Bu tanımlarda da görüldüğü üzere 3. ve 4. sıradaki yağlar refine edildiğinden daha doğrusu doğal yapısı bozulduğundan kullanılması tavsiye edilmiyor. Bu yağların asitlik düzeyi bir takım kimyasal işlemler neticesinde düşürülmektedir. Buradan da anlayacağımız üzere asiditesi düşük olan her yağ iyi yağ değildir. Yağı duyusal açıdan bir bütün olarak değerlendirmek gerekir
+                </p>
             </div>
 
         </div>
@@ -182,9 +303,9 @@
 <script>
     var swiper = new Swiper('.slider1', {
         loop: true,
-        autoHeight: true,
+        //autoHeight: true,
         autoplay: {
-            delay: 1000,
+            delay: 2000,
             disableOnInteraction: false,
         },
         // If we need pagination
@@ -202,9 +323,8 @@
         }
     });
 
-    var swiper = new Swiper('.slider2', {
+    var swiper2 = new Swiper('.slider2', {
         loop: true,
-        autoHeight: true,
         autoplay: {
             delay: 5000,
             disableOnInteraction: false,
