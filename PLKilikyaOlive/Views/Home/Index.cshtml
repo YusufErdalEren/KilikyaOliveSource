@@ -26,10 +26,11 @@
     }
 
     .swiper-slide {
-        text-align: center;
+        display: block;
+        width: 100%;
+/*        background: #00ffff;*/
+/*        text-align: center;
         font-size: 18px;
-        background: #fff;
-        /* Center slide text vertically */
         display: -webkit-box;
         display: -ms-flexbox;
         display: -webkit-flex;
@@ -41,26 +42,9 @@
         -webkit-box-align: center;
         -ms-flex-align: center;
         -webkit-align-items: center;
-        align-items: center;
+        align-items: center;*/
     }
 
-    .swiper-slide {
-        display: block;
-        width: 100%;
-        /*            height: auto;
-            -ms-transform: translate(-50%, -50%);
-            -webkit-transform: translate(-50%, -50%);
-            -moz-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-            position: absolute;
-            left: 50%;
-            top: 50%;*/
-    }
-
-    .image-slider {
-        height: 430px;
-        width: 100%;
-    }
 </style>
 <div class="row">
     <div class="col-md-8">
@@ -68,53 +52,35 @@
             @*<label style="text-align:center; display:block; font-size:x-large;">Zeytin Yağı</label>*@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <div style="background-image: url('/images/OliveOil_1.jpg')">
-                        deneme
-                    </div>
+                    <a asp-action="Index" asp-controller="Home">
+                        <img src="images/OliveOil_1.jpg" />
+                    </a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="#">
-                        <div style="background-image: url('/images/OliveOil_2.jpg')">
-                        </div>
+                    <a asp-action="Index" asp-controller="Home">
+                        <img src="images/OliveOil_2.jpg" />
                     </a>
                 </div>
-                @*<a>
-                        <div class="image-slider" style="background-image: url(../images/OliveOil_2.jpg)">
-                        </div>
-                    </a>
-                    <a>
-                        <div class="image-slider" style="background-image: url(../images/OliveOil_1.jpg)">
-                        </div>
-                    </a>
-                    <a>
-                        <div class="image-slider" style="background-image: url(../images/OliveOil_2.jpg)">
-                        </div>
-                    </a>
-                    <a>
-                        <div class="image-slider" style="background-image: url(../images/OliveOil_1.jpg)">
-                        </div>
-                    </a>*@
-                @*<div class="swiper-slide">
-                        <img src="images/OliveOil_2.jpg" />
-                    </div>
-                    <div class="swiper-slide">
+                <div class="swiper-slide">
+                    <a asp-action="Index" asp-controller="Home">
                         <img src="images/OliveOil_1.jpg" />
-                    </div>
-                    <div class="swiper-slide">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a asp-action="Index" asp-controller="Home">
                         <img src="images/OliveOil_2.jpg" />
-                    </div>
-                    <div class="swiper-slide">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a asp-action="Index" asp-controller="Home">
                         <img src="images/OliveOil_1.jpg" />
-                    </div>
-                    <div class="swiper-slide">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a asp-action="Index" asp-controller="Home">
                         <img src="images/OliveOil_2.jpg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="images/OliveOil_1.jpg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="images/OliveOil_2.jpg" />
-                    </div>*@
+                    </a>
+                </div>
             </div>
 
             <div class="swiper-pagination"></div>
@@ -126,33 +92,39 @@
             <div class="swiper-scrollbar"></div>
         </div>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-4" >
         <div class="swiper-container slider2" style="margin-top:50px;">
             @*<label style="text-align:center; display:block; font-size:x-large;">Zeytin</label>*@
-            <div class="swiper-wrapper" style="background-color:aqua;">
+            <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="images/greenOlive.jpg" />
+                    <a asp-action="Index" asp-controller="Home">
+                        <img src="images/greenOlive.jpg" />
+                    </a>
                 </div>
                 <div class="swiper-slide">
-                    <img src="images/greenOlive2.jpg" />
+                    <a asp-action="Index" asp-controller="Home">
+                        <img src="images/greenOlive2.jpg" />
+                    </a>
                 </div>
                 <div class="swiper-slide">
-                    <img src="images/greenOlive3.jpg" />
+                    <a asp-action="Index" asp-controller="Home">
+                        <img src="images/greenOlive3.jpg" />
+                    </a>
                 </div>
                 <div class="swiper-slide">
-                    <img src="images/greenOlive.jpg" />
+                    <a asp-action="Index" asp-controller="Home">
+                        <img src="images/greenOlive.jpg" />
+                    </a>
                 </div>
                 <div class="swiper-slide">
-                    <img src="images/greenOlive2.jpg" />
+                    <a asp-action="Index" asp-controller="Home">
+                        <img src="images/greenOlive2.jpg" />
+                    </a>
                 </div>
                 <div class="swiper-slide">
-                    <img src="images/greenOlive3.jpg" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="images/greenOlive.jpg" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="images/greenOlive2.jpg" />
+                    <a asp-action="Index" asp-controller="Home">
+                        <img src="images/greenOlive3.jpg" />
+                    </a>
                 </div>
             </div>
 
