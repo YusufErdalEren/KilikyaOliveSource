@@ -26,7 +26,8 @@ namespace PLKilikyaOlive
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<KilikyaContext>();
-            services.AddIdentity<AppUser, AppRole>();
+            services.AddIdentity<AppUser, AppRole>()
+                .AddEntityFrameworkStores<KilikyaContext>(); ;
 
 
             services.AddControllersWithViews().AddRazorRuntimeCompilation();

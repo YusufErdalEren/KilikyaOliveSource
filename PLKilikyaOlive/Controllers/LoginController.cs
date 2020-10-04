@@ -34,6 +34,8 @@ namespace PLKilikyaOlive.Controllers
         [HttpPost]
         public async Task<IActionResult> Register(UserSignUpViewModel model)
         {
+            string phoneNumber = new String(model.PhoneNumber.Where(Char.IsDigit).ToArray());
+
             if (ModelState.IsValid)
             {
                 AppUser appUser = new AppUser
@@ -42,7 +44,7 @@ namespace PLKilikyaOlive.Controllers
                     SurName = model.SurName,
                     Email = model.Email,
                     UserName = model.UserName,
-                    PhoneNumber = model.PhoneNumber
+                    PhoneNumber = phoneNumber
                 };
 
                 var result = await _userManager.CreateAsync(appUser, model.Password);
