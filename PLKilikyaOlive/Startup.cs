@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using BLLKilikyaOlive.CustomIocExtention;
 using DALKilikyaOlive.KilikyaOliveContext;
 using DALKilikyaOlive.Models;
 using Microsoft.AspNetCore.Builder;
@@ -25,6 +26,7 @@ namespace PLKilikyaOlive
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDependencies();
             services.AddDbContext<KilikyaContext>();
             services.AddIdentity<AppUser, AppRole>()
                 .AddEntityFrameworkStores<KilikyaContext>(); ;

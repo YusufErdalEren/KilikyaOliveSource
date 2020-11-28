@@ -1,4 +1,5 @@
-﻿using DALKilikyaOlive.Models;
+﻿using CoreKilikyaOlive.Entity;
+using DALKilikyaOlive.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
@@ -22,5 +23,8 @@ namespace DALKilikyaOlive.KilikyaOliveContext
             modelBuilder.Entity<IdentityUserRole<int>>().HasKey(m => new { m.RoleId, m.UserId });
             modelBuilder.Entity<IdentityUserToken<int>>().HasKey(m => new { m.UserId, m.LoginProvider, m.Name });
         }
+
+        public DbSet<Product> Products { get; set; }
+        public DbSet<ProductGroup> ProductGroups { get; set; }
     }
 }

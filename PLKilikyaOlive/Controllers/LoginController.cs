@@ -26,6 +26,16 @@ namespace PLKilikyaOlive.Controllers
             return View();
         }
 
+        public async Task<IActionResult> Login(UserSignInViewModel model)
+        {
+            var result = await _signInManager.PasswordSignInAsync(model.UserName, model.Password, false, false);
+
+            if (result.Succeeded)
+                return RedirectToAction("Index", "Home");
+            else
+                return RedirectToAction("Index", "Login");
+        }
+
         public IActionResult Register()
         {
             return View();

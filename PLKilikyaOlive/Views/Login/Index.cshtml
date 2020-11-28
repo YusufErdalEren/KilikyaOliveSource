@@ -10,19 +10,20 @@
             <div class="row">
                 <div class="col-md-4">
                     <a asp-action="Index" asp-controller="Home" class="logo">
-                        <img src="images/Kilikya_son.jpg" >
+                        <img src="images/Kilikya_son.jpg">
                     </a>
                 </div>
                 <div class="col-md-8">
                     <h3>Hesabınızla Giriş Yapınız</h3>
-                    <form>
+                    @using (Html.BeginForm("Login", "Login", FormMethod.Post))
+                    {
                         <div class="form-group">
-                            <label class="sr-only">Username or Email</label>
-                            <input type="text" class="form-control" placeholder="Username or Email">
+                            <label class="sr-only">Username</label>
+                            <input name="UserName" type="text" class="form-control" placeholder="Username">
                         </div>
                         <div class="form-group m-b-5">
                             <label class="sr-only">Password</label>
-                            <input type="password" class="form-control" placeholder="Password">
+                            <input name="Password" type="password" class="form-control" placeholder="Password">
                         </div>
                         <div class="form-group form-inline text-left">
                             <div class="form-check">
@@ -32,9 +33,9 @@
                             </div>
                         </div>
                         <div class="text-left form-group">
-                            <button type="button" class="btn">Login</button>
+                            <button type="submit" class="btn">Login</button>
                         </div>
-                    </form>
+                    }
                     <p class="small">
                         Henüz bir hesabınız yok mu? <a asp-action="Register" asp-controller="Login">Şimdi Kayıt Ol</a>
                     </p>

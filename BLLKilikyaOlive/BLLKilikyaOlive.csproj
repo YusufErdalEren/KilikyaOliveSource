@@ -5,11 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Interface\" />
-    <Folder Include="Business\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\DALKilikyaOlive\DALKilikyaOlive.csproj" />
   </ItemGroup>
 
